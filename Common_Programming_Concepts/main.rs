@@ -2,15 +2,15 @@
 fn main (){
     /*immutable variables*/
 
-//     let mut x=5; // mut makes the variable x mutable
-//     println!("value of x is {x}");
-//     x=6;
-//     println!("{x}");
+    // let mut x=5; // mut makes the variable x mutable
+    // println!("value of x is {x}");
+    // x=6;
+    // println!("{x}");
 
     /*Constants */
     // ⚠️constants are values that are bound to a name and are not allowed to change, but there are a few differences between constants and variables.
-    const THREE_HOURS_IN_SECONDS: u16 = 60 * 60 * 3;
-    println!("Three hours in seconds: {THREE_HOURS_IN_SECONDS}");
+    // const THREE_HOURS_IN_SECONDS: u16 = 60 * 60 * 3;
+    // println!("Three hours in seconds: {THREE_HOURS_IN_SECONDS}");
     
 
 //     | Type    | Size              | Signed | Range                           |
@@ -33,5 +33,15 @@ fn main (){
 // f32	32-bit	Single precision float
 // f64	64-bit	Double precision float (default)|
 
+
+/*Shadowing */
+
+let x=5;
+let x=x+1;
+{
+    let x=x*2;
+    println!("{x}");
+}
+println!("{x}")
  }
 
