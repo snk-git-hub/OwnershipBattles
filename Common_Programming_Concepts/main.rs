@@ -36,12 +36,50 @@ fn main (){
 
 /*Shadowing */
 
-let x=5;
-let x=x+1;
-{
-    let x=x*2;
-    println!("{x}");
+// let x=5;
+// let x=x+1;
+// {
+//     let x=x*2;
+//     println!("{x}");
+// }
+// println!("{x}")
+
+// let  _a : u32 = "5".parse().expect("not a number");
+
+// println!("{_a}")
+
+
+
+// Length	Signed	Unsigned
+// 8-bit	i8	u8
+// 16-bit	i16	u16
+// 32-bit	i32	u32
+// 64-bit	i64	u64
+// 128-bit	i128	u128
+// arch	isize	usize
+
+//
+// Number literals	Example
+// Decimal	98_222
+// Hex	0xff
+// Octal	0o77
+// Binary	0b1111_0000
+// Byte (u8 only)	b'A'
+
+//etc/...
+
+//The tuple type
+// let tup:(i32,f64,u8)=(500,6.4,1);
+
+// println!("{}",tup.1)
+//////or////
+// let tup=(500,6.4,1);
+// let(x,y,z)=tup;
+// println!("{x},{y},{z}")
+
 }
-println!("{x}")
- }
+
+
+
+
 
